@@ -1981,3 +1981,74 @@ textarea.form-input::-webkit-resizer { display: none; }
   background-color: #cc0000; /* Darker red on hover */
 }
 
+.news-ticker {
+  width: 100%;
+  overflow: hidden;
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 10px 0;
+  margin: 30px 0;
+  border-top: 2px solid #FFD700;
+  border-bottom: 2px solid #FFD700;
+  font-weight: 500;
+  position: relative;
+}
+
+.ticker-text {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: ticker 15s linear infinite;
+  font-size: 1rem;
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.news-ticker {
+  width: 100%;
+  overflow: hidden;
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 10px 0;
+  margin: 30px 0;
+  border-top: 2px solid #FFD700;
+  border-bottom: 2px solid #FFD700;
+  font-weight: 500;
+  position: relative;
+}
+
+.ticker-text {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: ticker 15s linear infinite;
+  font-size: 1rem;
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.inline-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.inline-icon img {
+  height: 50px;
+  vertical-align: middle;
+}
+
