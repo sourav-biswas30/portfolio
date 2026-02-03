@@ -2057,23 +2057,29 @@ textarea.form-input::-webkit-resizer { display: none; }
 .logo-row {
   display: flex;
   align-items: center;
-  gap: 24px;
-  margin-bottom: 20px;
-  flex-wrap: wrap; /* makes it responsive */
+  justify-content: flex-start;
+  gap: 14px;
+  margin: 12px 0 20px;
+  flex-wrap: wrap;
 }
 
 .logo-row img {
-  height: 45px;
+  display: inline-block;      /* override global img { display:block } */
+  height: 34px;               /* smaller */
+  width: auto;
+  max-width: 110px;           /* prevents huge wide logos */
   object-fit: contain;
   filter: grayscale(100%);
   opacity: 0.85;
   transition: all 0.3s ease;
 }
 
+
 .logo-row img:hover {
   filter: grayscale(0%);
   opacity: 1;
   transform: scale(1.05);
 }
+
 
 
