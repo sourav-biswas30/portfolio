@@ -2052,3 +2052,28 @@ textarea.form-input::-webkit-resizer { display: none; }
   vertical-align: middle;
 }
 
+
+
+.logo-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* makes it responsive */
+}
+
+.logo-row img {
+  height: 45px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.85;
+  transition: all 0.3s ease;
+}
+
+.logo-row img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+
