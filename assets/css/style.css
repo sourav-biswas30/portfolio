@@ -2058,28 +2058,30 @@ textarea.form-input::-webkit-resizer { display: none; }
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 14px;
+  gap: 18px;
   margin: 12px 0 20px;
   flex-wrap: wrap;
 }
 
 .logo-row img {
-  display: inline-block;      /* override global img { display:block } */
-  height: 34px;               /* smaller */
+  display: inline-block;
+  height: 55px;          /* ✅ bigger (change 55 -> 60 if you want) */
   width: auto;
-  max-width: 110px;           /* prevents huge wide logos */
+  max-width: 160px;      /* ✅ avoids super-wide logos taking over */
   object-fit: contain;
-  filter: grayscale(100%);
-  opacity: 0.85;
-  transition: all 0.3s ease;
-}
 
+  /* ✅ keep color by default */
+  filter: none;
+  opacity: 0.95;
+
+  transition: filter 0.25s ease, transform 0.25s ease, opacity 0.25s ease;
+}
 
 .logo-row img:hover {
-  filter: grayscale(0%);
+  /* ✅ “darker / richer” look */
+  filter: brightness(0.85) contrast(1.15) saturate(1.15);
   opacity: 1;
-  transform: scale(1.05);
+  transform: scale(1.04);
 }
-
 
 
