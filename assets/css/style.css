@@ -2065,7 +2065,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .logo-row img {
   display: inline-block;
-  height: 55px;          /* ✅ bigger (change 55 -> 60 if you want) */
+  height: 90px;          /* ✅ bigger (change 55 -> 60 if you want) */
   width: auto;
   max-width: 160px;      /* ✅ avoids super-wide logos taking over */
   object-fit: contain;
